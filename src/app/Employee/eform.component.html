@@ -1,0 +1,43 @@
+<div>
+    <form>
+        <table border="2">
+            <tr>
+                <th>Employee Id:</th>
+                <td> <input type="text" name="eid" [(ngModel)]="eid"></td>
+            </tr>
+            <tr>
+                <th>Employee Name :</th>
+                <td> <input type="text" name="ename" [(ngModel)]="ename"></td>
+            </tr>
+            <tr>
+                <th>Employee Salary :</th>
+                <td> <input type="text" name="salary" [(ngModel)]="salary"></td>
+            </tr>
+            <tr>
+                <th>Employee Department :</th>
+                <td> <input type="text" name="dept" [(ngModel)]="dept"></td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+                    <button type="button" name="btn" (click)="addEmployee()">Add Employee</button>
+                </td>
+                <td>
+                    <button type="button" name="btn" (click)="updateEmployee()">Update Employee</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<!-- <div>
+    <form>
+        Employee Id:<input type="text" name="eid" [(ngModel)]="eid"> Employee Name:<input type="text" name="ename" [(ngModel)]="ename"> Employee Salary:<input type="text" name="salary" [(ngModel)]="salary"> Employee Department:<input type="text" name="dept"
+            [(ngModel)]="dept">
+
+        <button type="button" name="btn">Add Employee</button>
+        <button type="button" name="btn">Update Employee</button>
+    </form>
+</div> -->
